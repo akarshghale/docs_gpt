@@ -21,19 +21,17 @@ def set_openai_api_key(api_key: str):
     st.session_state["OPENAI_API_KEY"] = api_key
 
 
-st.set_page_config(page_title="KnowledgeGPT", page_icon="📖", layout="wide")
-st.header("📖KnowledgeGPT")
+st.set_page_config(page_title="DocsGPT", page_icon="📖", layout="wide")
+st.header("📖DocsGPT")
 
 with st.sidebar:
     st.markdown("# About")
     st.markdown(
-        "📖KnowledgeGPT allows you to ask questions about your "
+        "📖DocsGPT allows you to ask questions about your "
         "documents and get accurate answers with instant citations. "
     )
     st.markdown(
-        "This tool is a work in progress. "
-        "You can contribute to the project on [GitHub](https://github.com/mmz-001/knowledge_gpt) "
-        "with your feedback and suggestions💡"
+        "Acclerating Research. One paper at a time. "
     )
     st.markdown("---")
     st.markdown(
@@ -54,7 +52,7 @@ with st.sidebar:
         set_openai_api_key(api_key_input)
 
     st.markdown("---")
-    st.markdown("Made by [mmz_001](https://twitter.com/mm_sasmitha)")
+    st.markdown("Made with love from Jain University batch of 2019 CSE-AI.")
 
 uploaded_file = st.file_uploader(
     "Upload a pdf, docx, or txt file",
