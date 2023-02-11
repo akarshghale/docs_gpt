@@ -22,12 +22,12 @@ def set_openai_api_key(api_key: str):
 
 
 st.set_page_config(page_title="DocsGPT", page_icon="📖", layout="wide")
-st.header("📖DocsGPT")
+st.header("📖Academic Assistant")
 
 with st.sidebar:
     st.markdown("# About")
     st.markdown(
-        "📖DocsGPT allows you to ask questions about your "
+        "📖Academic Assistant allows you to ask questions about your "
         "documents and get accurate answers with instant citations. "
     )
     st.markdown(
